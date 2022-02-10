@@ -1,2 +1,7 @@
-import Vue from 'vue';
-export default Vue;
+import Topnav from "../components/Topnav.vue";
+import Icon from "../lib/Icon.vue";
+export default {
+    components: {
+        Topnav, Icon
+    },
+};

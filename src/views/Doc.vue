@@ -60,7 +60,7 @@ export default {
   },
   setup() {
     const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
-    const selectedItem = ref('com')
+    const selectedItem = ref('doc')
     const onClick = value => {
       selectedItem.value = selectedItem.value === value ? '' : value
     }

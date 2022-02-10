@@ -8,9 +8,9 @@
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">
+        <a target='_blank'  href="https://github.com/dashixiong-11/vue-zui">
           <Icon name='github' :size='30'/>
-        </router-link>
+        </a>
       </li>
     </ul>
 
