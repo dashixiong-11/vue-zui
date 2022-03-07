@@ -24,10 +24,13 @@ import Dialog from './Dialog.vue';
 
 export {Dialog}
 
+import Toast from './Toast.vue';
+
+export {Toast}
 import {openDialog} from './openDialog';
 
 export {openDialog}
-const components = [Switch, Button, Tabs, Tab, Dialog];
+const components = [Switch, Button, Tabs, Tab, Dialog,Toast];
 
 export function registerZUI(app: App): void {
 

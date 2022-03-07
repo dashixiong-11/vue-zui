@@ -3,22 +3,26 @@
 </demo>
 <template>
   <z-button @click='toggle'> show toast</z-button>
+  <z-toast position='middle' :autoClose='5' :onClose='close' v-model:visible='bool'>
+    <template v-slot:message>
+      这是一条弹窗
+    </template>
+  </z-toast>
 </template>
 
 <script lang="ts">
-import {showToast} from '../lib/showToast'
+import {ref} from 'vue'
 
 export default {
   setup() {
+    const bool = ref(false)
     const toggle = () => {
-      showToast({
-        message: '这是一条弹框!',
-        onClose: () => {
-          console.log('toast close')
-        }
-      })
+      bool.value = true
     }
-    return {toggle}
+    const close = () => {
+      console.log('toast close')
+    }
+    return {toggle, bool, close}
   }
 }
 </script>

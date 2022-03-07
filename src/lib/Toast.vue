@@ -11,11 +11,11 @@
 </template>
 <script lang='ts'>
 export default {
-  name:'ZToast'
+  name: 'ZToast'
 }
 </script>
 <script setup lang='ts'>
-import { onMounted, computed} from 'vue';
+import {onMounted, computed } from 'vue';
 
 interface Props {
   visible: boolean,
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  visible: true,
+  visible: false,
   autoClose: 3,
   position: 'top',
   onClose: () => {

@@ -3,7 +3,7 @@ export default {
 };
 import { onMounted, computed } from 'vue';
 const props = withDefaults(defineProps(), {
-    visible: true,
+    visible: false,
     autoClose: 3,
     position: 'top',
     onClose: () => {
